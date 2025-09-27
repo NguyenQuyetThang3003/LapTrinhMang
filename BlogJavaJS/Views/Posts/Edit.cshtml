@@ -1,0 +1,49 @@
+@model BlogJavaJS.Models.Post
+@{
+    ViewData["Title"] = "Edit Post";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-3">Sửa bài viết</h2>
+
+    <!-- cần enctype để upload file -->
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="Id" />
+
+        <div class="mb-3">
+            <label asp-for="Title" class="form-label"></label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Content" class="form-label"></label>
+            <textarea asp-for="Content" class="form-control" rows="6"></textarea>
+            <span asp-validation-for="Content" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Tag" class="form-label"></label>
+            <input asp-for="Tag" class="form-control" />
+        </div>
+
+        <!-- Hiện ảnh hiện tại -->
+        @if (!string.IsNullOrWhiteSpace(Model.ImageUrl))
+        {
+            <div class="mb-3">
+                <label class="form-label">Ảnh hiện tại</label><br />
+                <img src="@Model.ImageUrl" alt="Current Image" class="img-fluid rounded mb-2" style="max-height:200px;" />
+            </div>
+        }
+
+        <!-- Input upload ảnh mới -->
+        <div class="mb-3">
+            <label asp-for="ImageFile" class="form-label">Chọn ảnh mới (nếu muốn đổi)</label>
+            <input asp-for="ImageFile" type="file" class="form-control" accept="image/*" />
+            <span asp-validation-for="ImageFile" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-success">Lưu</button>
+        <a asp-action="Index" class="btn btn-outline-secondary ms-2">Hủy</a>
+    </form>
+</div>

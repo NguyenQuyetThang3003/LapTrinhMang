@@ -1,0 +1,120 @@
+@model BlogJavaJS.Models.ContactViewModel
+
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<div class="contact-section d-flex align-items-center justify-content-center">
+    <div class="overlay"></div>
+
+    <div class="contact-box bg-white p-5 shadow">
+        <h1 class="text-center mb-4 fw-bold">CONTACT</h1>
+        <p class="text-center mb-5 text-uppercase">
+            FOR INQUIRIES AND COLLABORATIONS, REACH ME HERE
+        </p>
+
+        <form asp-action="Contact" method="post" class="row g-4">
+            <div class="col-md-6">
+                <label asp-for="FirstName" class="form-label fw-semibold">First Name *</label>
+                <input asp-for="FirstName" class="form-control border-dark rounded-0" />
+                <span asp-validation-for="FirstName" class="text-danger small"></span>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="LastName" class="form-label fw-semibold">Last Name *</label>
+                <input asp-for="LastName" class="form-control border-dark rounded-0" />
+                <span asp-validation-for="LastName" class="text-danger small"></span>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="Email" class="form-label fw-semibold">Email *</label>
+                <input asp-for="Email" class="form-control border-dark rounded-0" />
+                <span asp-validation-for="Email" class="text-danger small"></span>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="Phone" class="form-label fw-semibold">Phone</label>
+                <input asp-for="Phone" class="form-control border-dark rounded-0" />
+                <span asp-validation-for="Phone" class="text-danger small"></span>
+            </div>
+            <div class="col-12">
+                <label asp-for="Message" class="form-label fw-semibold">Leave us a message</label>
+                <textarea asp-for="Message" class="form-control border-dark rounded-0" rows="5"></textarea>
+                <span asp-validation-for="Message" class="text-danger small"></span>
+            </div>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-dark rounded-0 px-5 py-2">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- ✅ Modal cảm ơn -->
+<div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header border-0">
+        <h5 class="modal-title w-100" id="thankYouLabel">🎉 Cảm ơn bạn!</h5>
+      </div>
+      <div class="modal-body">
+        Chúng tôi đã nhận được thông tin liên hệ của bạn.<br />
+        Đội ngũ sẽ phản hồi trong thời gian sớm nhất.
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-dark rounded-0 px-4" data-bs-dismiss="modal">Đóng</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var showModal = '@(TempData["ShowThankYouModal"] ?? "false")';
+            if (showModal.toLowerCase() === "true") {
+                var myModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+                myModal.show();
+
+                // ✅ Tự động đóng modal sau 5 giây
+                setTimeout(() => {
+                    myModal.hide();
+                }, 5000);
+            }
+        });
+    </script>
+}
+
+<style>
+    .contact-section {
+        position: relative;
+        min-height: 100vh;
+        background: url('/images/bg-contact.jpg') no-repeat center center/cover;
+        padding: 60px 15px;
+    }
+
+    .contact-section .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .contact-box {
+        position: relative;
+        z-index: 2;
+        max-width: 900px;
+        width: 100%;
+        border: 1px solid #000;
+    }
+
+    .form-control {
+        border: 1px solid #000;
+        border-radius: 0;
+    }
+
+    .form-control:focus {
+        box-shadow: none;
+        border-color: #000;
+    }
+</style>

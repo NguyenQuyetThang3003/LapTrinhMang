@@ -1,0 +1,123 @@
+﻿@model IEnumerable<BlogJavaJS.Models.Post>
+@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+@section Styles {
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Hero (nổi bật trên background) */
+        .hero {
+            padding: 60px 0;
+            text-align: center;
+            background: rgba(99, 102, 241, 0.85); /* tím mờ */
+            color: #fff;
+            border-radius: 10px;
+            margin: 30px auto;
+            max-width: 900px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        /* Featured posts (❌ không có background xám) */
+        .featured-posts {
+            padding: 40px 30px;
+            margin-top: 30px;
+        }
+
+        .card-img-top {
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px 6px 0 0;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.9); /* card có nền trắng mờ riêng */
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .card-text {
+            font-size: 0.95rem;
+            color: #333;
+        }
+
+        .btn-primary {
+            background-color: #6366f1;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #4f46e5;
+        }
+    </style>
+}
+
+<div class="hero">
+    <h1>Chào mừng đến với THE BLOG</h1>
+    <p>Khám phá những bài viết nổi bật mới nhất</p>
+</div>
+
+<div class="container featured-posts">
+    <h2 class="mb-4 text-center">Bài viết nổi bật</h2>
+
+    @if (Model == null || !Model.Any())
+    {
+        <p class="text-muted text-center">Hiện chưa có bài viết nổi bật nào.</p>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var post in Model)
+            {
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <a asp-controller="Posts" asp-action="Details" asp-route-id="@post.Id">
+                            @if (!string.IsNullOrEmpty(post.ImageUrl))
+                            {
+                                <img src="@post.ImageUrl" class="card-img-top" alt="@post.Title" />
+                            }
+                            else
+                            {
+                                <img src="https://via.placeholder.com/400x200?text=No+Image"
+                                     class="card-img-top" alt="No image" />
+                            }
+                        </a>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@post.Title</h5>
+                            <p class="card-text">
+                                @(
+                                    string.IsNullOrWhiteSpace(post.Content)
+                                        ? ""
+                                        : (post.Content.Length > 100 ? post.Content[..100] + "..." : post.Content)
+                                )
+                            </p>
+                            <a asp-controller="Posts" asp-action="Details" asp-route-id="@post.Id"
+                               class="btn btn-primary mt-auto">Đọc tiếp</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

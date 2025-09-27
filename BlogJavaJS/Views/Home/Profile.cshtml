@@ -1,0 +1,85 @@
+@{
+    ViewData["Title"] = "Nguyễn Quyết Thắng - Profile";
+}
+
+<style>
+    body{
+        background: url('/images/bg-main.jpg') no-repeat center center fixed;
+        background-size: cover;
+        font-family: 'Segoe UI', sans-serif;
+        line-height: 1.8;
+    }
+
+    .profile-card{
+        max-width: 800px;
+        margin: 60px auto;
+        padding: 40px;
+        border-radius: 16px;
+        text-align: center;
+        overflow-wrap: break-word;
+        color: #fff;
+
+        /* ✅ background phụ nhỏ trong card */
+        background: 
+            linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), /* lớp mờ */
+            url('/images/bg-main.jpg') center/cover no-repeat; /* ảnh phụ */
+        backdrop-filter: blur(8px);
+
+        box-shadow: 0 12px 30px rgba(0,0,0,.4);
+        border: 1px solid rgba(255,255,255,.2);
+    }
+
+    .profile-img{
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #fff;
+        box-shadow: 0 4px 16px rgba(0,0,0,.4);
+        margin-bottom: 24px;
+    }
+
+    .profile-card h1{
+        font-size: 2rem;
+        margin-bottom: 8px;
+        color: #fff;
+        text-shadow: 0 2px 8px rgba(0,0,0,.8);
+    }
+
+    .profile-card p{
+        font-size: 1.05rem;
+        margin-bottom: 12px;
+        color: #f3f4f6;
+    }
+
+    .social-links a{
+        display: inline-block;
+        margin: 6px;
+        padding: 8px 16px;
+        border-radius: 999px;
+        background: #6366f1;
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+        transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .social-links a:hover{
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,.3);
+    }
+</style>
+
+<div class="profile-card">
+    <img src="~/images/nguyen_quyet_thang.jpg" alt="Nguyễn Quyết Thắng" class="profile-img"/>
+    <h1>Nguyễn Quyết Thắng</h1>
+    <p>Sinh viên năm 3, HUTECH, chuyên ngành Hệ thống thông tin</p>
+    <p>Lớp 22DTH C5 - MSSV: 2280603003</p>
+    <p>Sở thích: chơi cầu lông, đọc sách, phát triển phần mềm</p>
+    <p><strong>Liên hệ:</strong></p>
+    <div class="social-links">
+        <a href="https://github.com/NguyenQuyetThang3003" target="_blank">GitHub</a>
+        <a href="https://www.facebook.com/share/17NF7iXNTb/?mibextid=wwXIfr" target="_blank">Facebook</a>
+        <a href="https://zalo.me/0839610128" target="_blank">Zalo</a>
+    </div>
+</div>

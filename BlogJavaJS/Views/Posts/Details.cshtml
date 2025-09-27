@@ -1,0 +1,185 @@
+@model BlogJavaJS.Models.Post
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<style>
+    :root{
+        --bg: #ffffff;
+        --card: #ffffff;
+        --stroke: rgba(0,0,0,.08);
+        --fg: #111827;
+        --muted: #6b7280;
+        --accent1: #6366f1;
+        --accent2: #06b6d4;
+        --shine: rgba(0,0,0,.10);
+    }
+
+    body{ background: var(--bg); font-family: 'Segoe UI', sans-serif; line-height:1.7; color: var(--fg); }
+
+    .hero{
+        position: relative;
+        border-bottom: 1px solid var(--stroke);
+        padding: 72px 0 48px;
+        background: radial-gradient(800px 400px at 85% -10%, rgba(99,102,241,.08), transparent 60%),
+                    radial-gradient(700px 400px at -10% 10%, rgba(6,182,212,.08), transparent 60%);
+        overflow: hidden;
+    }
+    .hero .orb{
+        position:absolute; inset:-40%;
+        background: conic-gradient(from 180deg at 50% 50%, transparent 0 25%, rgba(99,102,241,.10) 25% 50%, transparent 50% 75%, rgba(6,182,212,.10) 75% 100%);
+        filter: blur(90px);
+        animation: spin 24s linear infinite;
+        pointer-events:none;
+    }
+    @@keyframes spin{ to{ transform: rotate(360deg); } }
+
+    .crumb{
+        backdrop-filter: blur(6px);
+        background: rgba(255,255,255,.8);
+        border: 1px solid var(--stroke);
+        color: var(--fg);
+        border-radius: 999px;
+        display: inline-flex;
+        gap:10px;
+        align-items:center;
+        padding:6px 14px;
+        font-size:.9rem;
+        box-shadow: 0 4px 16px rgba(0,0,0,.08);
+    }
+    .crumb a{ color: var(--muted); text-decoration:none; }
+    .crumb a:hover{ color: var(--fg); }
+
+    .title{ font-family: ui-serif, Georgia, "Times New Roman", serif; font-size:2rem; color: var(--fg); margin:18px 0 12px; }
+    .meta{ color: var(--muted); font-size:.95rem; }
+
+    .neo-card{
+        border-radius: 16px;
+        padding: 32px;
+        background: var(--card);
+        border:1px solid var(--stroke);
+        box-shadow:0 12px 30px rgba(0,0,0,.08);
+        max-width:900px; margin:auto; overflow-wrap:break-word;
+    }
+
+    .media-wrap{
+        border-radius:14px; overflow:hidden; position:relative; box-shadow:0 6px 20px rgba(0,0,0,.08);
+        transform-style: preserve-3d; transition: transform .25s ease; margin-bottom:24px;
+    }
+    .media-wrap:hover{ transform: translateY(-2px) scale(1.01); }
+
+    .media-wrap img{ width:100%; height:auto; object-fit:cover; cursor: zoom-in; border-radius:14px; }
+
+    .content{
+        color: var(--fg); font-size:1.05rem; line-height:1.8; white-space: pre-wrap; word-wrap: break-word;
+    }
+
+    .btn-neo{
+        position: relative; overflow:hidden;
+        color: var(--fg); border:1px solid var(--stroke);
+        background: #ffffff; border-radius:10px;
+        transition: transform .15s ease, box-shadow .15s ease, border-color .2s;
+        padding: .5rem 1rem; font-size:.9rem;
+    }
+    .btn-neo:hover{ transform: translateY(-1px); box-shadow: 0 8px 20px rgba(0,0,0,.12); border-color: rgba(0,0,0,.15); }
+
+    .reveal{ opacity:0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.show{ opacity:1; transform:none; }
+
+    .lightbox{ position:fixed; inset:0; background: rgba(0,0,0,.7); display:none; align-items:center; justify-content:center; z-index:9999; }
+    .lightbox.show{ display:flex; }
+    .lightbox img{ max-width:92vw; max-height:88vh; border-radius:12px; box-shadow:0 20px 80px rgba(0,0,0,.7); }
+</style>
+
+<div class="hero">
+    <div class="orb"></div>
+    <div class="container position-relative">
+        <span class="crumb reveal">
+            <a asp-controller="Posts" asp-action="Index">Bài viết</a> › <span>@Model.Title</span>
+        </span>
+        <h1 class="title reveal">@Model.Title</h1>
+        <div class="meta reveal d-flex gap-3 align-items-center">
+            <span><i class="bi bi-calendar"></i> @Model.CreatedAt.ToLocalTime().ToString("dd MMM yyyy, HH:mm")</span>
+            <span>·</span>
+            <span><i class="bi bi-eye"></i> @Model.Views</span>
+            @if(!string.IsNullOrWhiteSpace(Model.Tag)){
+                <span class="badge bg-secondary">@Model.Tag</span>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="neo-card reveal">
+        @if(Model.Images != null && Model.Images.Any()){
+            <div class="media-wrap">
+                <div id="postCarousel@Model.Id" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        @for(int i=0;i<Model.Images.Count;i++){
+                            var img = Model.Images.ElementAt(i);
+                            <div class="carousel-item @(i==0?"active":"")">
+                                <img src="@img.ImageUrl" data-lightbox="@img.ImageUrl" />
+                            </div>
+                        }
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#postCarousel@Model.Id" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#postCarousel@Model.Id" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        } else if(!string.IsNullOrWhiteSpace(Model.ImageUrl)){
+            <div class="media-wrap">
+                <img src="@Model.ImageUrl" data-lightbox="@Model.ImageUrl" />
+            </div>
+        } else{
+            <div class="media-skeleton"></div>
+        }
+
+        <article class="content">@Model.Content</article>
+
+        <hr style="border-top:1px solid var(--stroke); margin:24px 0;" />
+
+        <div class="d-flex justify-content-between gap-2 flex-wrap">
+            <a class="btn btn-neo" asp-controller="Posts" asp-action="Index">← Quay lại</a>
+            <div class="d-flex gap-2">
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-neo">Sửa</a>
+                <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-neo">Xóa</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="lightbox" id="lb"><img alt="preview"/></div>
+
+<script>
+    // reveal animation
+    const io = new IntersectionObserver((entries)=>{
+        entries.forEach(e=>{if(e.isIntersecting) e.target.classList.add('show');});
+    }, {threshold:.15});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+    // ripple btn
+    document.querySelectorAll('.btn-neo').forEach(btn=>{
+        btn.addEventListener('pointerdown', e=>{
+            const r = btn.querySelector('.r');
+            if(!r) return;
+            const rect = btn.getBoundingClientRect();
+            r.style.left = (e.clientX-rect.left)+'px';
+            r.style.top = (e.clientY-rect.top)+'px';
+            r.animate([{transform:'translate(-50%,-50%) scale(.2)', opacity:.6},
+                       {transform:'translate(-50%,-50%) scale(8)', opacity:0}], {duration:700, easing:'ease-out'});
+        });
+    });
+
+    // lightbox
+    const lb = document.getElementById('lb');
+    const lbImg = lb.querySelector('img');
+    document.addEventListener('click', e=>{
+        const t = e.target.closest('[data-lightbox]');
+        if(t){ e.preventDefault(); lbImg.src = t.getAttribute('data-lightbox'); lb.classList.add('show'); }
+    });
+    lb.addEventListener('click', ()=> lb.classList.remove('show'));
+</script>

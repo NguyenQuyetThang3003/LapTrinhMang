@@ -1,0 +1,40 @@
+@model BlogJavaJS.Models.Post
+@{
+    ViewData["Title"] = "Create Post";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-3">Tạo bài viết</h2>
+
+    <form asp-action="Create" asp-controller="Posts" method="post" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="mb-3">
+            <label asp-for="Title" class="form-label"></label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Content" class="form-label"></label>
+            <textarea asp-for="Content" class="form-control" rows="6"></textarea>
+            <span asp-validation-for="Content" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Tag" class="form-label"></label>
+            <input asp-for="Tag" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Ảnh minh họa</label>
+            <input asp-for="ImageFile" type="file" class="form-control" accept="image/*" />
+            <span asp-validation-for="ImageFile" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-success">Lưu</button>
+        <a asp-action="Index" asp-controller="Posts" class="btn btn-outline-secondary ms-2">Hủy</a>
+    </form>
+</div>
+
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }
