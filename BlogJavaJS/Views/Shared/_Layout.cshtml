@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
-    <!-- Custom site CSS -->
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 
     @RenderSection("Styles", required: false)
@@ -19,29 +18,41 @@
             font-family: 'Segoe UI', sans-serif;
             margin: 0;
             padding: 0;
-            background: url('/images/bg-main.jpg') no-repeat center center fixed;
+            background: url('/images/main.jpg') no-repeat center center fixed;
             background-size: cover;
             color: #000;
             position: relative;
         }
 
-        /* ❌ BỎ overlay xám mờ 
         body::before {
             content: "";
             position: fixed;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            background: rgba(0,0,0,0.35);
+            background: rgba(255, 255, 255, 0.35);
             z-index: -1;
-        } */
-
-        header, footer {
-            background-color: rgba(248, 249, 250, 0.9); /* nền mờ để nổi trên ảnh */
-            padding: 15px 0;
         }
 
+        header, footer {
+            background-color: rgba(248, 249, 250, 0.9);
+            padding: 15px 0;
+            backdrop-filter: blur(6px);
+        }
+
+        /* 🔥 LOGO mới: quyetthang.jpg */
         .navbar-brand img {
-            height: 40px;
+            height: 55px;
+            width: 55px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .navbar-brand img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0,0,0,0.4);
         }
 
         .nav-link {
@@ -82,6 +93,7 @@
         .social-icons i {
             color: #000;
             font-size: 18px;
+            transition: color .2s ease;
         }
 
         .social-icons i:hover {
@@ -101,9 +113,9 @@
     <header>
         <div class="container d-flex justify-content-between align-items-center">
             <div>
-                <!-- 🔁 LOGO -->
+                <!-- 🟢 LOGO: quyetthang.jpg -->
                 <a class="navbar-brand" asp-controller="Posts" asp-action="Index">
-                    <img src="~/images/logo.png" alt="NightFury Logo" />
+                    <img src="~/images/quyetthang.jpg" alt="Quyet Thang" />
                 </a>
             </div>
 
@@ -141,7 +153,6 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
