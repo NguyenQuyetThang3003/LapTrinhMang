@@ -1,315 +1,323 @@
 {
   "Files": [
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlogJavaJS.bundle.scp.css",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlogJavaJS.bundle.scp.css",
       "PackagePath": "staticwebassets\\BlogJavaJS.jrohr2vvhx.bundle.scp.css"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\css\\site.css",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\favicon.ico",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\images\\bg-contact.jpg",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\images\\CV.pdf",
+      "PackagePath": "staticwebassets\\images\\CV.pdf"
+    },
+    {
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\images\\bg-contact.jpg",
       "PackagePath": "staticwebassets\\images\\bg-contact.jpg"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\images\\bg-main.jpg",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\images\\bg-main.jpg",
       "PackagePath": "staticwebassets\\images\\bg-main.jpg"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\images\\logo.png",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\images\\main.jpg",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\images\\main.jpg",
       "PackagePath": "staticwebassets\\images\\main.jpg"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\images\\nguyen_quyet_thang.jpg",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\images\\nguyen_quyet_thang.jpg",
       "PackagePath": "staticwebassets\\images\\nguyen_quyet_thang.jpg"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\images\\quyetthang.jpg",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\images\\quyetthang.jpg",
       "PackagePath": "staticwebassets\\images\\quyetthang.jpg"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\js\\site.js",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\uploads\\33d92a18a17b443f87df209af1e87f65.jpg",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\uploads\\33d92a18a17b443f87df209af1e87f65.jpg",
       "PackagePath": "staticwebassets\\uploads\\33d92a18a17b443f87df209af1e87f65.jpg"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\uploads\\3eb1d6e8551046eea99ec7eeda83fddf.webp",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\uploads\\3eb1d6e8551046eea99ec7eeda83fddf.webp",
       "PackagePath": "staticwebassets\\uploads\\3eb1d6e8551046eea99ec7eeda83fddf.webp"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\uploads\\43fd80132bf647d7859550bb80bd823d.webp",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\uploads\\43fd80132bf647d7859550bb80bd823d.webp",
       "PackagePath": "staticwebassets\\uploads\\43fd80132bf647d7859550bb80bd823d.webp"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\uploads\\593d158718f542138df9aec412e7d616.jpg",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\uploads\\593d158718f542138df9aec412e7d616.jpg",
       "PackagePath": "staticwebassets\\uploads\\593d158718f542138df9aec412e7d616.jpg"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\uploads\\6e033cada7a14603984bfcccc1d342dc.jpg",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\uploads\\6e033cada7a14603984bfcccc1d342dc.jpg",
       "PackagePath": "staticwebassets\\uploads\\6e033cada7a14603984bfcccc1d342dc.jpg"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\uploads\\81d74585717d498d9c37fe0bb2b2b0d1.jpg",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\uploads\\81d74585717d498d9c37fe0bb2b2b0d1.jpg",
       "PackagePath": "staticwebassets\\uploads\\81d74585717d498d9c37fe0bb2b2b0d1.jpg"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\uploads\\d87a58176f864fc393303626a18f56e0.png",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\uploads\\CV.pdf",
+      "PackagePath": "staticwebassets\\uploads\\CV.pdf"
+    },
+    {
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\uploads\\d87a58176f864fc393303626a18f56e0.png",
       "PackagePath": "staticwebassets\\uploads\\d87a58176f864fc393303626a18f56e0.png"
     },
     {
-      "Id": "E:\\Lap Trinh Mang\\BlogJavaJS\\wwwroot\\uploads\\eb93db5f51524542b6633143eb6e2582.jpg",
+      "Id": "E:\\Lap Trinh Mang\\LapTrinhMang\\BlogJavaJS\\wwwroot\\uploads\\eb93db5f51524542b6633143eb6e2582.jpg",
       "PackagePath": "staticwebassets\\uploads\\eb93db5f51524542b6633143eb6e2582.jpg"
     },
     {

@@ -19,10 +19,9 @@
         overflow-wrap: break-word;
         color: #fff;
 
-        /* ✅ background phụ nhỏ trong card */
         background: 
-            linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), /* lớp mờ */
-            url('/images/main.jpg') center/cover no-repeat; /* ảnh phụ */
+            linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+            url('/images/main.jpg') center/cover no-repeat;
         backdrop-filter: blur(8px);
 
         box-shadow: 0 12px 30px rgba(0,0,0,.4);
@@ -68,6 +67,28 @@
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(0,0,0,.3);
     }
+
+    .cv-section {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .cv-section a{
+        display: inline-block;
+        margin-top: 10px;
+        background: #22c55e;
+        color: white;
+        padding: 10px 24px;
+        border-radius: 999px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background .2s ease;
+    }
+
+    .cv-section a:hover{
+        background: #16a34a;
+    }
 </style>
 
 <div class="profile-card">
@@ -76,6 +97,23 @@
     <p>Sinh viên năm 3, HUTECH, chuyên ngành Hệ thống thông tin</p>
     <p>Lớp 22DTH C5 - MSSV: 2280603003</p>
     <p>Sở thích: chơi cầu lông, đọc sách, phát triển phần mềm</p>
+
+    <div class="cv-section">
+        <h2>Giới thiệu bản thân</h2>
+        <p>
+            Tôi là sinh viên năm 3 chuyên ngành Hệ thống Thông tin tại Đại học Công nghệ TP.HCM (HUTECH),
+            với niềm đam mê lập trình game và thiết kế hệ thống. Hiện tôi đang phát triển một trò chơi 2D hành động – phiêu lưu
+            bằng Unity và C#, nơi tôi có thể kết hợp tư duy logic lập trình với sự sáng tạo trong gameplay.
+        </p>
+        <p>
+            Tôi mong muốn trở thành một nhà phát triển game toàn diện, có khả năng xây dựng hệ thống vững chắc và tạo ra
+            trải nghiệm người chơi hấp dẫn. Ngoài ra, tôi cũng có nền tảng về cơ sở dữ liệu, SQL, BI và làm việc nhóm qua GitHub.
+        </p>
+
+        <h3>Tải CV của tôi</h3>
+        <a href="~/uploads/CV.pdf" target="_blank">📄 Xem CV (PDF)</a>
+    </div>
+
     <p><strong>Liên hệ:</strong></p>
     <div class="social-links">
         <a href="https://github.com/NguyenQuyetThang3003" target="_blank">GitHub</a>
