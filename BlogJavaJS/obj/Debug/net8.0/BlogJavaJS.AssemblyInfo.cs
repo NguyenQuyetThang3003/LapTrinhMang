@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlogJavaJS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8521c182d4a0f0e5b02400e4cc5639a2fb7d11b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55f7bd9bbe1f51ee67a817439819e42d40755a91")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlogJavaJS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlogJavaJS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

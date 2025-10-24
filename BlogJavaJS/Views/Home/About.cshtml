@@ -3,22 +3,25 @@
 }
 
 <style>
-    :root{
+    :root {
         --card: #ffffff;
-        --stroke: rgba(0,0,0,.08);
+        --stroke: rgba(0, 0, 0, .08);
         --fg: #111827;
+        --primary: #6366f1;
+        --secondary: #06b6d4;
     }
 
-    body{
+    body {
         font-family: 'Segoe UI', sans-serif;
         line-height: 1.8;
         color: var(--fg);
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
+        background: #f9fafb;
     }
 
     /* ---------- HERO ---------- */
-    .hero{
+    .hero {
         position: relative;
         text-align: center;
         padding: 100px 20px 60px;
@@ -26,86 +29,122 @@
         max-width: 1000px;
         margin: 40px auto;
         color: #fff;
-        box-shadow: 0 8px 30px rgba(0,0,0,.25);
-
-        /* 🔥 dùng lại ảnh nền chung */
+        box-shadow: 0 8px 30px rgba(0, 0, 0, .25);
         background: url('/images/main.jpg') no-repeat center/cover;
     }
 
-    /* Overlay đen mờ để chữ nổi */
-    .hero::before{
-        content:"";
-        position:absolute;
-        inset:0;
-        background: rgba(0,0,0,0.45);
-        border-radius:16px;
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        border-radius: 16px;
     }
 
-    .hero *{
+    .hero * {
         position: relative;
         z-index: 1;
     }
 
-    .profile-img{
+    .profile-img {
         width: 160px;
         height: 160px;
         border-radius: 50%;
         border: 4px solid #fff;
         object-fit: cover;
-        box-shadow: 0 12px 30px rgba(0,0,0,.25);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, .25);
         margin-bottom: 24px;
     }
 
-    .title{
-        font-size: 2.2rem;
+    .title {
+        font-size: 2.3rem;
         font-weight: 700;
         margin-bottom: 8px;
         color: #fff;
     }
 
-    .subtitle{
-        font-size: 1.2rem;
+    .subtitle {
+        font-size: 1.15rem;
         color: #f3f4f6;
         margin-bottom: 32px;
     }
 
     /* ---------- CARD ---------- */
-    .neo-card{
-        max-width: 900px;
+    .neo-card {
+        max-width: 950px;
         margin: -40px auto 60px auto;
         background: var(--card);
         border-radius: 20px;
-        padding: 40px;
-        box-shadow: 0 20px 40px rgba(0,0,0,.12);
+        padding: 45px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, .12);
         border: 1px solid var(--stroke);
+        transition: transform .2s ease, box-shadow .2s ease;
     }
 
-    .content p{
+    .neo-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, .15);
+    }
+
+    .content p {
         margin-bottom: 20px;
         font-size: 1.05rem;
+        text-align: justify;
     }
 
-    .social-links a{
+    .section-title {
+        font-size: 1.35rem;
+        font-weight: 700;
+        color: var(--primary);
+        margin-top: 35px;
+        margin-bottom: 15px;
+        border-left: 5px solid var(--secondary);
+        padding-left: 10px;
+    }
+
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .skills-list span {
+        background: linear-gradient(45deg, var(--primary), var(--secondary));
+        color: #fff;
+        font-weight: 600;
+        padding: 8px 16px;
+        border-radius: 50px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
+        transition: transform .2s ease;
+    }
+
+    .skills-list span:hover {
+        transform: scale(1.07);
+    }
+
+    .social-links a {
         display: inline-block;
         margin-right: 12px;
         margin-top: 8px;
-        padding: 10px 20px;
+        padding: 10px 22px;
         border-radius: 50px;
-        background: linear-gradient(45deg, #6366f1, #06b6d4);
+        background: linear-gradient(45deg, var(--primary), var(--secondary));
         color: #fff;
         font-weight: 600;
         text-decoration: none;
         transition: transform .2s ease, box-shadow .2s ease;
     }
-    .social-links a:hover{
+
+    .social-links a:hover {
         transform: translateY(-3px);
-        box-shadow: 0 6px 20px rgba(0,0,0,.2);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, .25);
     }
 </style>
 
 <!-- ======================== HERO ======================== -->
 <div class="hero">
-    <img src="~/images/quyetthang.jpg" alt="Nguyễn Quyết Thắng" class="profile-img"/>
+    <img src="~/images/quyetthang.jpg" alt="Nguyễn Quyết Thắng" class="profile-img" />
     <h1 class="title">Nguyễn Quyết Thắng</h1>
     <p class="subtitle">Sinh viên HUTECH – Lớp 22DTHC5 – MSSV: 2280603003</p>
 </div>
@@ -113,16 +152,70 @@
 <!-- ======================== CARD CONTENT ======================== -->
 <div class="neo-card">
     <div class="content">
-        <p>Xin chào! Tôi là <strong>Nguyễn Quyết Thắng</strong>, hiện đang là sinh viên năm 3 tại <strong>HUTECH</strong>, lớp <strong>22DTH C5</strong>, chuyên ngành <strong>Hệ thống thông tin</strong>. Tôi đam mê lập trình, phát triển phần mềm và các hệ thống thông tin hiện đại.</p>
 
-        <p>Bên cạnh học tập, tôi yêu thích thể thao, đặc biệt là <strong>cầu lông</strong>, giúp rèn luyện sức khỏe, tăng sự tập trung và tinh thần đồng đội. Tôi cũng thích đọc sách, tham gia các hoạt động ngoại khóa để mở rộng kiến thức và kỹ năng mềm.</p>
+        <p>
+            Xin chào! Tôi là <strong>Nguyễn Quyết Thắng</strong>, hiện đang là sinh viên năm 3 tại <strong>HUTECH</strong>,
+            lớp <strong>22DTH C5</strong>, chuyên ngành <strong>Hệ thống thông tin</strong>. Tôi đam mê lập trình, phân tích dữ liệu
+            và xây dựng các hệ thống thông tin hiện đại, thân thiện và hiệu quả cho người dùng.
+        </p>
 
-        <p>Trong tương lai, tôi mong muốn trở thành một chuyên gia IT giỏi về <strong>Hệ thống thông tin & phát triển phần mềm</strong>, đóng góp vào các dự án công nghệ phục vụ cộng đồng và phát triển các ứng dụng giúp cuộc sống dễ dàng hơn.</p>
+        <p>
+            Tôi luôn quan niệm rằng công nghệ không chỉ là công cụ, mà còn là cầu nối giữa con người và tri thức.
+            Vì thế, tôi luôn cố gắng học hỏi, thử nghiệm và hoàn thiện bản thân thông qua các dự án cá nhân cũng như
+            hoạt động học tập trên giảng đường.
+        </p>
 
+        <p>
+            Ngoài việc học, tôi có niềm yêu thích lớn với <strong>cầu lông</strong> – bộ môn giúp tôi rèn luyện sức khỏe,
+            tính kiên trì và sự tập trung. Tôi cũng thích đọc sách, đặc biệt là các đầu sách về tư duy logic và kỹ năng mềm,
+            vì tôi tin rằng kỹ thuật giỏi cần đi cùng với tư duy và giao tiếp hiệu quả.
+        </p>
+
+        <h3 class="section-title">💻 Kỹ năng chuyên môn</h3>
+        <div class="skills-list">
+            <span>C#</span>
+            <span>ASP.NET Core MVC</span>
+            <span>Entity Framework</span>
+            <span>SQL Server</span>
+            <span>PostgreSQL</span>
+            <span>MySQL</span>
+            <span>HTML / CSS / JavaScript</span>
+            <span>Bootstrap</span>
+            <span>Git & GitHub</span>
+            <span>Render Deployment</span>
+        </div>
+
+        <h3 class="section-title">🚀 Kinh nghiệm & Dự án</h3>
+        <p>
+            Trong quá trình học tập và thực hành, tôi đã tham gia phát triển và hoàn thiện một số dự án tiêu biểu như:
+        </p>
+        <ul style="margin-left:20px; line-height:1.8;">
+            <li><strong>🏸 Website quản lý sân cầu lông</strong> – Xây dựng hệ thống đặt sân, quản lý khung giờ, người dùng và thanh toán. <br><em>Công nghệ:</em> ASP.NET Core MVC, Entity Framework Core, SQL Server.</li>
+            <li><strong>🚚 Ứng dụng quản lý giao hàng</strong> – Quản lý đơn hàng, tài xế, tuyến đường và trạng thái giao nhận. <br><em>Công nghệ:</em> C#, WinForms, MySQL.</li>
+            <li><strong>🕹️ Game “Mê Cung Thám Hiểm”</strong> – Trò chơi 2D điều khiển nhân vật vượt qua mê cung, chướng ngại vật và hoàn thành nhiệm vụ. <br><em>Công nghệ:</em> Unity, C# Script, Tilemap.</li>
+            <li><strong>📰 Blog cá nhân “NightFury Blog”</strong> – Hệ thống bài viết, phân loại, CRUD và giao diện responsive. <br><em>Công nghệ:</em> ASP.NET Core, Razor View, PostgreSQL, Render Deploy.</li>
+            <li><strong>📦 Ứng dụng quản lý kho hàng</strong> – Quản lý sản phẩm, nhập – xuất kho, thống kê tồn kho và doanh thu. <br><em>Công nghệ:</em> ASP.NET Core MVC, SQL Server, LINQ, Chart.js.</li>
+        </ul>
+
+        <p>
+            Những dự án này giúp tôi củng cố kiến thức lập trình, hiểu rõ quy trình phát triển phần mềm và rèn luyện kỹ năng làm việc nhóm, tư duy giải quyết vấn đề.
+        </p>
+
+        <h3 class="section-title">🎯 Mục tiêu nghề nghiệp</h3>
+        <p>
+            Trong tương lai, tôi mong muốn phát triển bản thân theo hướng <strong>Software Developer / System Analyst</strong>,
+            chuyên sâu về phân tích, thiết kế và phát triển hệ thống thông tin doanh nghiệp.
+            Tôi mong muốn được làm việc trong môi trường năng động, nơi có thể học hỏi và phát huy tối đa khả năng của mình,
+            đồng thời đóng góp vào các sản phẩm công nghệ mang lại giá trị thiết thực cho cộng đồng.
+        </p>
+
+        <h3 class="section-title">🌐 Liên hệ</h3>
+        <p>Nếu bạn quan tâm hoặc muốn kết nối, hãy liên hệ với tôi qua các nền tảng dưới đây 👇</p>
         <div class="social-links">
             <a href="https://github.com/NguyenQuyetThang3003" target="_blank">GitHub</a>
             <a href="https://www.facebook.com/share/17NF7iXNTb/?mibextid=wwXIfr" target="_blank">Facebook</a>
             <a href="https://zalo.me/0839610128" target="_blank">Zalo</a>
+            <a href="~/uploads/CV.pdf" target="_blank">📄 Xem CV (PDF)</a>
         </div>
     </div>
 </div>
