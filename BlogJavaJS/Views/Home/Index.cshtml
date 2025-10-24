@@ -1,123 +1,150 @@
-﻿@model IEnumerable<BlogJavaJS.Models.Post>
-@{
-    ViewData["Title"] = "Trang chủ";
+﻿@{
+    ViewData["Title"] = "Trang chủ - NightFury Blog";
 }
 
-@section Styles {
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+<style>
+    body {
+        background: url('/images/main.jpg') no-repeat center center fixed;
+        background-size: cover;
+        font-family: 'Segoe UI', sans-serif;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
 
-        /* Hero (nổi bật trên background) */
-        .hero {
-            padding: 60px 0;
-            text-align: center;
-            background: rgba(99, 102, 241, 0.85); /* tím mờ */
-            color: #fff;
-            border-radius: 10px;
-            margin: 30px auto;
-            max-width: 900px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-        }
+    /* ---------- HERO SECTION ---------- */
+    .hero {
+        text-align: center;
+        padding: 160px 20px 120px;
+        background: rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(4px);
+        border-radius: 16px;
+        max-width: 1000px;
+        margin: 80px auto;
+        box-shadow: 0 15px 45px rgba(0,0,0,0.4);
+        animation: fadeIn 1s ease-out;
+    }
 
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
+    .intro-text {
+        font-size: 1.3rem;
+        color: #e5e7eb;
+        margin-bottom: 12px;
+        animation: floatUp 1s ease-out;
+    }
 
-        .hero p {
-            font-size: 1.2rem;
-            opacity: 0.95;
-        }
+    .typing {
+        display: inline-block;
+        border-right: 3px solid #a5b4fc;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 4s steps(40, end), blink .7s infinite;
+        font-weight: 700;
+        color: #a5b4fc;
+        font-size: 2.2rem;
+    }
 
-        /* Featured posts (❌ không có background xám) */
-        .featured-posts {
-            padding: 40px 30px;
-            margin-top: 30px;
-        }
+    .hero p {
+        font-size: 1.1rem;
+        color: #d1d5db;
+        margin-top: 24px;
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.8;
+    }
 
-        .card-img-top {
-            height: 180px;
-            object-fit: cover;
-            border-radius: 6px 6px 0 0;
-        }
+    .btn-main {
+        background: linear-gradient(90deg, #6366f1, #06b6d4);
+        color: #fff;
+        padding: 14px 32px;
+        font-size: 1.1rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        transition: all 0.25s ease;
+        margin-top: 20px;
+        display: inline-block;
+    }
 
-        .card {
-            background: rgba(255,255,255,0.9); /* card có nền trắng mờ riêng */
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        }
+    .btn-main:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
 
-        .card-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
+    /* ---------- FEATURED SECTION ---------- */
+    .featured {
+        text-align: center;
+        padding: 60px 20px 100px;
+        background: rgba(255, 255, 255, 0.1);
+        border-top: 1px solid rgba(255,255,255,0.2);
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        backdrop-filter: blur(4px);
+    }
 
-        .card-text {
-            font-size: 0.95rem;
-            color: #333;
-        }
+    .featured h2 {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 16px;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
 
-        .btn-primary {
-            background-color: #6366f1;
-            border: none;
-        }
+    .featured p {
+        color: #d1d5db;
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 1.05rem;
+    }
 
-        .btn-primary:hover {
-            background-color: #4f46e5;
-        }
-    </style>
-}
+    footer {
+        color: #d1d5db;
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 20px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
 
+    /* ---------- ANIMATIONS ---------- */
+    @@keyframes fadeIn {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @@keyframes floatUp {
+        from { opacity: 0; transform: translateY(50px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @@keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+
+    @@keyframes blink {
+        50% { border-color: transparent; }
+    }
+</style>
+
+<!-- ================= HERO ================= -->
 <div class="hero">
-    <h1>Chào mừng đến với THE BLOG</h1>
-    <p>Khám phá những bài viết nổi bật mới nhất</p>
+    <p class="intro-text">👋 Xin chào, tôi là <strong>Nguyễn Quyết Thắng</strong></p>
+    <h1 class="typing">Rất vui được gặp bạn tại NightFury Blog!</h1>
+    <p>
+        Đây là không gian nhỏ nơi tôi chia sẻ những điều tôi học được về lập trình, 
+        công nghệ và cuộc sống — hy vọng bạn sẽ tìm thấy điều gì đó hữu ích, 
+        truyền cảm hứng hoặc đơn giản là khiến bạn mỉm cười 😊
+    </p>
+    <a class="btn-main" asp-controller="Posts" asp-action="Index">Khám phá bài viết</a>
 </div>
 
-<div class="container featured-posts">
-    <h2 class="mb-4 text-center">Bài viết nổi bật</h2>
-
-    @if (Model == null || !Model.Any())
-    {
-        <p class="text-muted text-center">Hiện chưa có bài viết nổi bật nào.</p>
-    }
-    else
-    {
-        <div class="row">
-            @foreach (var post in Model)
-            {
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <a asp-controller="Posts" asp-action="Details" asp-route-id="@post.Id">
-                            @if (!string.IsNullOrEmpty(post.ImageUrl))
-                            {
-                                <img src="@post.ImageUrl" class="card-img-top" alt="@post.Title" />
-                            }
-                            else
-                            {
-                                <img src="https://via.placeholder.com/400x200?text=No+Image"
-                                     class="card-img-top" alt="No image" />
-                            }
-                        </a>
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">@post.Title</h5>
-                            <p class="card-text">
-                                @(
-                                    string.IsNullOrWhiteSpace(post.Content)
-                                        ? ""
-                                        : (post.Content.Length > 100 ? post.Content[..100] + "..." : post.Content)
-                                )
-                            </p>
-                            <a asp-controller="Posts" asp-action="Details" asp-route-id="@post.Id"
-                               class="btn btn-primary mt-auto">Đọc tiếp</a>
-                        </div>
-                    </div>
-                </div>
-            }
-        </div>
-    }
+<!-- ================= FEATURED ================= -->
+<div class="featured">
+    <h2>Bài viết nổi bật</h2>
+    <p>Hãy cùng tôi khám phá những bài viết mới nhất và hấp dẫn nhất nhé!</p>
 </div>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    © 2025 · <strong>NightFury Blog</strong> · Kết nối & chia sẻ để cùng phát triển.
+</footer>
